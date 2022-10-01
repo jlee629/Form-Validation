@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 - Form Validation</title>
+    <link rel="stylesheet" href="assignment4.css">
+</head>
+<body>
+    <h1>Assignment 4 - Form Validation</h1>
+    <div class="wrapper">
+        <form>
+            <h2 class="title">Member Registration</h2>
+            <h3 class="requirement">You must complete all the fields below</h3>
+
+            <label for="firstName"><span>First Name: </span><input type="text" id="firstName" class = "input" /></label>
+            <div class="error-message error-first">
+                <p>Only characters are allowed.</p>
+            </div>
+            <label for="lastName"><span>Last Name: </span><input type="text" id="lastName" class = "input" /></label>
+            <div class="error-last error-message">
+                <p>Only characters are allowed.</p>
+            </div>
+            <label for="address"><span>Address: </span><input type="text" id="address" class = "input" /></label>
+            <div class="error-address error-message">
+                <p>Only characters and numbers are allowed.</p>
+            </div>
+            <label for="city"><span>City: </span><input type="text" id="city" class = "input" /></label>
+            <div class="error-city error-message">
+                <p>Only characters are allowed.</p>
+            </div>
+            <label for="postalCode"><span>Postal Code: </span><input type="text" id="postalCode" class = "input" /></label>
+            <div class="error-postal error-message">
+                <p>Allowed format examples: K1A 0B1, K1A0B1</p>
+            </div>
+            <label for="province"><span>Province: </span><input type="text" id="province" class = "input" /></label>
+            <div class="error-province error-message">
+                <p>Allowed province is strictly one of QC, ON, MN, SK, AB, BC.</p>
+            </div>
+            <label for="age"><span>Age: </span><input type="text" id="age" class = "input" /></label>
+            <div class="error-age error-message">
+                <p>Age must be at least 18 and less than 100. Only numbers are allowed.</p>
+            </div>
+            <label for="password"><span>Password: </span><input type="password" id="password" class = "input" /></label>
+            <div class="error-password error-message"> 
+                <p>Passwords must have at least 6 characters, one digit and one upper-case letter.</p>
+            </div>
+            <label for="passwordConfirm"><span>Confirm: </span><input type="password" id="passwordConfirm" class = "input" /></label>
+            <div class="error-confirm error-message">
+                <p>Passwords must match.</p>
+            </div>
+            <label for="email"><span>Email: </span><input type="text" id="email" class = "input" /></label>
+            <div class="error-email error-message last-div">
+                <p>Allowed format example: 8778th@gmail.com</p>
+            </div>
+            <br />
+            <input type="button" id="register" value="Register Now" />
+            <input type="button" id="clearForm" value="Clear Form" />
+            <div class="error-result error-message">
+                <p>Please enter proper values!</p>
+            </div>
+            <h5 class="footer">&copy;&nbsp;Jungyu Lee - 301236221 - Assingment 4 - COMP125 - Summer 2022</h5>
+        </form> 
+    </div>
+    <script src="assignment4.js"></script>
+</body>
+</html>
